@@ -2,8 +2,9 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Github, Linkedin, Mail, FileText, Code, Server, Database, Globe, Users, Award, BookOpen, Youtube} from "lucide-react"
+import { Github, Linkedin, Mail, FileText, Code, Server, Users, Award, BookOpen, Youtube} from "lucide-react"
 import Link from "next/link"
+import Image from "next/image";
 
 export function PortfolioComponent() {
   return (
@@ -33,7 +34,7 @@ export function PortfolioComponent() {
         <section id="about" className="mb-16">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <h2 className="text-4xl font-bold mb-4 text-primary">Hi, I'm Sirawit Bunnam</h2>
+              <h2 className="text-4xl font-bold mb-4 text-primary">Hi, I&#39;m Sirawit Bunnam</h2>
               <p className="text-xl mb-4 text-foreground/80">An aspiring Full-stack Developer with a passion for learning, contributing to the tech community.</p>
               <div className="flex space-x-4">
                 <Button asChild>
@@ -51,9 +52,9 @@ export function PortfolioComponent() {
             <div className="md:w-1/2">
               <div className="relative w-64 h-64 mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent rounded-full animate-pulse"></div>
-                <img 
+                <Image 
                   src="/IMG_1198.jpg" 
-                  alt="John Doe" 
+                  alt="Sirawit Bunnam" 
                   className="absolute inset-2 rounded-full object-cover"
                   width={300} 
                   height={300} 
@@ -115,7 +116,7 @@ export function PortfolioComponent() {
                 title: "Tao Kae Noi Event 2023",
                 icon: Users,
                 description: "Mahidol Startup Community Engagement",
-                content: "In November 2023, I'm had join in Tao kae noi event at Mahidol University. It's an event about startup. I had learned how to make the startup and business models.",
+                content: "In November 2023, I had joined in Tao kae noi event at Mahidol University. It's an event about startup. I had learned how to make the startup and business models.",
                 action: "View Event",
                 href: "https://www.facebook.com/share/p/Akghhfvw3cD7GrSb/"
               }
@@ -145,7 +146,7 @@ export function PortfolioComponent() {
           <h2 className="text-3xl font-bold mb-8 text-primary">Get in Touch</h2>
           <Card className="overflow-hidden">
             <CardContent className="flex flex-col items-center justify-center p-6 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5">
-              <p className="text-center mb-6 text-foreground/80">I'm always eager to learn, collaborate on new projects, and connect with fellow developers. Feel free to reach out!</p>
+              <p className="text-center mb-6 text-foreground/80">I am always learn everything, collaborate on new projects, and connect with fellow developers. Feel free to reach out!</p>
               <div className="flex flex-wrap justify-center gap-4">
                 {[
                   { icon: Mail, label: "Email Me", color: "bg-blue-500 hover:bg-blue-600", href: "mailto:zentryx.official@gmail.com" },
