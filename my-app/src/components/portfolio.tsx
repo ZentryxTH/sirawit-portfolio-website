@@ -38,7 +38,7 @@ export function PortfolioComponent() {
               <p className="text-xl mb-4 text-foreground/80">An aspiring Full-stack Developer with a passion for learning, contributing to the tech community.</p>
               <div className="flex space-x-4">
                 <Button asChild>
-                  <a href="/newresume.pdf" target="_blank" rel="noopener noreferrer">
+                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                     <FileText className="mr-2 h-4 w-4" /> Resume
                   </a>
                 </Button>
